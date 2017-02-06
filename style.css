@@ -33,12 +33,12 @@ html {
 }
 
 /* Top portion */
-.top span.clear {
+.top button.clear {
 	float: left;
 }
 
 /* Inset shadow on the screen to create indent */
-.top .screen {
+.top #screen {
 	height: 40px;
 	width: 212px;
 	
@@ -63,7 +63,7 @@ html {
 .keys, .top {overflow: hidden;}
 
 /* Applying same to the keys */
-.keys span, .top span.clear {
+.keys button, .top button.clear {
 	float: left;
 	position: relative;
 	top: 0;
@@ -74,8 +74,9 @@ html {
 	height: 36px;
 	
 	background: white;
-	border-radius: 3px;
+	border-radius: 0px;
 	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	border: 0px;
 	
 	margin: 0 7px 11px 0;
 	
@@ -92,54 +93,74 @@ html {
 
 /* Remove right margins from operator keys */
 /* style different type of keys (operators/evaluate/clear) differently */
-.keys span.operator {
+.keys button.operator, .keys button.clickable {
 	background: #FFF0F5;
 	margin-right: 0;
+	border: 0px;
 }
 
-.keys span.equals {
+.keys button.equals {
 	background: #f1ff92;
 	box-shadow: 0px 4px #9da853;
 	color: #888e5f;
+	border: 0px;
 }
 
-.top span.clear {
+.top button.clear {
 	background: #ff9fa8;
 	box-shadow: 0px 4px #ff7c87;
 	color: white;
+	border: 0px;
 }
 
 /* Some hover effects */
-.keys span:hover {
+.keys button:hover {
 	background: #9c89f6;
 	box-shadow: 0px 4px #6b54d3;
 	color: white;
 }
 
-.keys span.equals:hover {
+.keys button.equals:hover {
 	background: #abb850;
 	box-shadow: 0px 4px #717a33;
 	color: #ffffff;
 }
 
-.top span.clear:hover {
+.top button.clear:hover {
 	background: #f68991;
 	box-shadow: 0px 4px #d3545d;
 	color: white;
 }
 
 /* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
-.keys span:active {
+.keys button:active {
 	box-shadow: 0px 0px #6b54d3;
 	top: 4px;
+
 }
 
-.keys span.equals:active {
+.keys button.equals:active {
 	box-shadow: 0px 0px #717a33;
 	top: 4px;
 }
 
-.top span.clear:active {
+.top button.clear:active {
 	top: 4px;
 	box-shadow: 0px 0px #d3545d;
 }
+
+p{
+
+	display: inline-block;
+	color: white;
+} 
+	
+ input.clickable {
+
+ font-size: 25px;
+
+
+
+}
+
+	
