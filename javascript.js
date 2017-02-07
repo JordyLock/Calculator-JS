@@ -94,7 +94,7 @@ if (status === "1"){
 
 }
 	else if (status === "2") {
-		result = Number(getal1) - Number(getal2);
+		result = Number((getal1) - Number(getal2)).toFixed(1);
 	}
 
     document.getElementById("register").innerHTML = result;
