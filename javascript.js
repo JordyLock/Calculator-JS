@@ -98,7 +98,7 @@ if (status === "1"){
 	}
 
     document.getElementById("register").innerHTML = result;
-   console.log(result)
+   console.log(result);
 }
  
 
