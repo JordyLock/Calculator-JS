@@ -83,7 +83,7 @@ console.log(status + " status");
     answer  = "=";
 getal2 = register.innerHTML;
 if (status === "1"){
-	result = Number(getal1) + Number(getal2);
+	result = +(Number(getal1) + Number(getal2)).toFixed(1);
 }	
 	else if (status === "3") {
 		result = Number(getal1) / Number(getal2);
